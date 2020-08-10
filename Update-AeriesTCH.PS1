@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Ensure that SIS TCH EM (email) field use proper email format
+Ensure that SIS TCH EM (email) field use proper email format/domain
 .DESCRIPTION
 This Script Updates the Aeries SIS currentyeardb.dbo.tch table.
 .EXAMPLE
