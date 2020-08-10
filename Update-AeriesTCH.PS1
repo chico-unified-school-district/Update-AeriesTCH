@@ -53,7 +53,7 @@ for ($i;$i -le $x;$i++){
  if ($results) {
   foreach ($em in $results) {
    $samid = $em.em.split('@')[0]
-   Add-Log update ('TCH.EM value {0}{1} set to {0}{2}'-f $samid,$StartDomain,$EndDomain)
+   Add-Log update ('TCH.EM value {0}@{1} set to {0}@{2}'-f $samid,$StartDomain,$EndDomain)
   }
   $updateStatement = "update tch set tch.em = replace (TCH.EM ,`'$StartDomain`',`'$EndDomain`')  where tch.em like `'%$StartDomain`';"
   Invoke-SQLCommand @dbParams -SqlCommand $updateStatement -WhatIf:$WhatIf
