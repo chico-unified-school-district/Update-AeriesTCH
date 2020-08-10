@@ -31,7 +31,6 @@ param (
 )
 
 Clear-Host ; $error.clear() # Clear screen and error log.
-Get-PSSession | Remove-PSSession -WhatIf:$false
 
 # Variables
 
