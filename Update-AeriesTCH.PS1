@@ -27,7 +27,7 @@ param (
  [string]$EndDomain,
  # Run a Whatif on commands - no data will be changed
  [Alias('wi')]
-	[switch]$WhatIf
+ [switch]$WhatIf
 )
 
 Clear-Host ; $error.clear() # Clear screen and error log.
