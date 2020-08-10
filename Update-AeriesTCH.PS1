@@ -45,7 +45,7 @@ $dbParams = @{
  Credential = $SISCredential
 }
 
-# RUn x times and exit
+# Run x times and exit
 $x = 4
 for ($i;$i -le $x;$i++){
  $query = "SELECT EM FROM TCH WHERE TCH.EM LIKE `'%$StartDomain`'"
@@ -65,6 +65,3 @@ for ($i;$i -le $x;$i++){
  Add-log sleep ('Next run at {0}'-f ((Get-Date).AddHours($hours)) )
  Start-Sleep (60*60*$hours)
 }
-
-Add-Log script "Tearing down PS Sessions..."
-Get-PSSession | Remove-PSSession -WhatIf:$false
