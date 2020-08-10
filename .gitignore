@@ -1,0 +1,7 @@
+*.log
+logs
+*.pw
+*desktop.ini
+desktop.ini
+.vscode/
+.vscode/*
